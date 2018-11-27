@@ -1,0 +1,376 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ *
+ * Common
+ * 
+ */
+
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 90px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px 5px 24px 5px;
+  text-transform: uppercase;
+}
+    .nav__item:first-child {
+        border-left: none;
+    }
+    .nav__item:hover {
+      background-color: #78909C;
+    }
+    .nav__item:hover a {
+        color: #fff;
+    }
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/main_image.jpg");
+  background-size: cover;
+  min-height: 300px;
+  order: 0;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+}
+
+.news__title {
+  /*font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;*/
+  margin-bottom: 10px;
+}
+
+.top-news__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 8px 0;
+  line-height: 19.2px;
+  width: 50%;
+}
+
+.top-news__item a:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+.news-header {
+    background-size: cover;
+    width: 100%;
+    max-width: 220px;
+    min-width: 100px;
+    min-height: 100px;
+    height: 75%;
+}
+.news-content {
+    width: 100%;
+    margin: auto;
+}
+
+#news-item1 .news-header{
+    background-image: url("../img/news1.jpg");
+}
+#news-item2 .news-header{
+    background-image: url("../img/news2.jpg");
+}
+#news-item3 .news-header{
+    background-image: url("../img/news3.jpg");
+}
+#news-item4 .news-header{
+    background-image: url("../img/news4.jpg");
+}
+
+
+/*
+ *
+ * Career Items
+ *
+ */
+
+.career {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  order: 1;
+}
+.career article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+  display: none;
+}
+    #career-item1:hover article {
+        display: block;
+    }
+    #career-item2:hover article {
+        display: block;
+    }
+    #career-item3:hover article {
+        display: block;
+    }
+    #career-item4:hover article {
+        display: block;
+    }
+    #career-item5:hover article {
+        display: block;
+    }
+    #career-item6:hover article {
+        display: block;
+    }
+    #career-item7:hover article {
+        display: block;
+    }
+    #career-item8:hover article {
+        display: block;
+    }
+    #career-item9:hover article {
+        display: block;
+    }
+    #career-item10:hover article {
+        display: block;
+    }
+    #career-item11:hover article {
+        display: block;
+    }
+    #career-item12:hover article {
+        display: block;
+    }
+
+.career-item {
+  background-size: cover;
+  padding: 8px 0;
+  min-height: 200px;
+  height: auto;
+  margin: 2px;
+}
+
+#career-item1{
+    background-image: url("../img/career1.jpg");
+}
+#career-item2{
+    background-image: url("../img/career2.jpg");
+}
+#career-item3{
+    background-image: url("../img/career3.jpg");
+}
+#career-item4{
+    background-image: url("../img/career4.jpg");
+}
+#career-item5{
+    background-image: url("../img/career5.jpg");
+}
+#career-item6{
+    background-image: url("../img/career6.jpg");
+}
+#career-item7{
+    background-image: url("../img/career7.jpg");
+}
+#career-item8{
+    background-image: url("../img/career8.jpg");
+}
+#career-item9{
+    background-image: url("../img/career9.jpg");
+}
+#career-item10{
+    background-image: url("../img/career10.jpg");
+}
+#career-item11{
+    background-image: url("../img/career11.jpg");
+}
+#career-item12{
+    background-image: url("../img/career12.jpg");
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
